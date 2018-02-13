@@ -9,5 +9,7 @@
 <button (click)="searchRecipes('pork')">Pork</button>
 
 <div *ngFor="let recipe of recipes">
+	<p>{{ recipe.idMeal }}</p>
 	<p>{{ recipe.strMeal }}</p>
+	<img src="http://{{ recipe.strMealThumb }}">
 </div>
