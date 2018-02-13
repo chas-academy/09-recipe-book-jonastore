@@ -1,0 +1,13 @@
+<input [(ngModel)]="keyWord">
+<button (click)="searchRecipes(keyWord)">Search</button>
+<br>
+<br>
+<button (click)="searchRecipes('chicken')">Chicken</button>
+<button (click)="searchRecipes('seafood')">Seafood</button>
+<button (click)="searchRecipes('pasta')">Pasta</button>
+<button (click)="searchRecipes('vegan')">Vegan</button>
+<button (click)="searchRecipes('pork')">Pork</button>
+
+<div *ngFor="let recipe of recipes">
+	<p>{{ recipe.strMeal }}</p>
+</div>
