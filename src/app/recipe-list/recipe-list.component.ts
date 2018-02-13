@@ -14,7 +14,7 @@ export class RecipeListComponent implements OnInit {
 
   searchRecipes(query){
   	return this._recipeService.getRecipe(query).subscribe(
-  		data => this.searchComplete(data);
+  		data => this.searchComplete(data)
   }
 
   searchComplete(data) { 
