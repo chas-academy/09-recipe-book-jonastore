@@ -2,8 +2,20 @@
 	text-align: center;
 }
 
-h3 {
-	margin-top: 1%;
+html, body {
+	margin: 0;
+	padding: 0;
+	background-color: #000066;
+}
+
+.main {
+	background-color: white;
+} 
+
+h2 {
+  margin-top: 1%;
+  color: #000066; 
+  font-family: Georgia;
 }
 
 img {
@@ -17,7 +29,7 @@ p {
 
 p:first-letter {
   color: #000066; 
-  font-family: Times;
+  font-family: Georgia;
   font-size: 100px;
   float: left;
   line-height: 90px;
