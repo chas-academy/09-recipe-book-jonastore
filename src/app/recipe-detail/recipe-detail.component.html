@@ -1,3 +1,10 @@
-<p>
-  recipe-detail works!
-</p>
+
+<div *ngFor="let recipe of recipes" class="testBorder">
+	
+	<h3>{{ recipe.strMeal }}</h3>
+	<img class="recipeImg" src="http://{{ recipe.strMealThumb }}" />
+	<div class="instructionContent">
+		<p>{{ recipe.strInstructions }}</p>
+	</div>
+
+</div>

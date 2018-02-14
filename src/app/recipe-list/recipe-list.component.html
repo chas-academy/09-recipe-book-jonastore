@@ -11,8 +11,10 @@
 </div>
 
 <div *ngFor="let recipe of recipes" class="testBorder">
-	<p>{{ recipe.idMeal }}</p>
-	<p>{{ recipe.strMeal }}</p>
-	<img src="http://{{ recipe.strMealThumb }}">
+	<a [routerLink]="['/details', recipe.idMeal]">
+		<p>{{ recipe.idMeal }}</p>
+		<p>{{ recipe.strMeal }}</p>
+		<img src="http://{{ recipe.strMealThumb }}">
+	</a>
 </div>
 

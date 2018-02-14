@@ -5,7 +5,8 @@ import { RouterModule, Routes } from '@angular/router';
 @Component({
   selector: 'app-recipe-list',
   templateUrl: './recipe-list.component.html',
-  styleUrls: ['./recipe-list.component.css']
+  styleUrls: ['./recipe-list.component.css'],
+  moduleId: module.id //delete this
 })
 export class RecipeListComponent implements OnInit {
 
@@ -16,10 +17,6 @@ export class RecipeListComponent implements OnInit {
   searchRecipes(query){
   	return this._recipeService.getRecipe(query).subscribe(
   		data => this.searchComplete(data))
-  }
-
-  getDetail(id: number) {
-   //return this.route.snapshot.paramMap.get('id');
   }
 
   searchComplete(data) { 

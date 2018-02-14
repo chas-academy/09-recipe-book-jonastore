@@ -1,0 +1,31 @@
+* {
+	text-align: center;
+}
+
+h3 {
+	margin-top: 1%;
+}
+
+img {
+	width: 250px;
+	margin: 1.5%;
+}
+
+p {
+	text-align: left;
+}
+
+p:first-letter {
+  color: #000066; 
+  font-family: Times;
+  font-size: 100px;
+  float: left;
+  line-height: 90px;
+  padding-right: 7px;
+}
+
+.instructionContent {
+	width: 50%;
+	margin: auto;
+
+}
