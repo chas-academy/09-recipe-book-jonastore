@@ -7,7 +7,6 @@ import { RouterModule, Routes } from '@angular/router';
 
 
 import { AppComponent } from './app.component';
-import { DashboardComponent } from './dashboard/dashboard.component';
 import { RecipeListComponent } from './recipe-list/recipe-list.component';
 import { RecipeService } from './recipe.service';
 import { RecipeDetailComponent } from './recipe-detail/recipe-detail.component';
@@ -22,7 +21,6 @@ const routes: Routes = [
 @NgModule({
   declarations: [
     AppComponent,
-    DashboardComponent,
     RecipeListComponent,
     RecipeDetailComponent,
   ],

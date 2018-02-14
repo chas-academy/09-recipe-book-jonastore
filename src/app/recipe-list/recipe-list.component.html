@@ -1,4 +1,4 @@
-<div class="testBorder">
+<div class="container">
 <input [(ngModel)]="keyWord">
 <button (click)="searchRecipes(keyWord)">Search</button>
 <br>
@@ -10,11 +10,15 @@
 <button (click)="searchRecipes('pork')">Pork</button>
 </div>
 
-<div *ngFor="let recipe of recipes" class="testBorder">
-	<a [routerLink]="['/details', recipe.idMeal]">
-		<p>{{ recipe.idMeal }}</p>
-		<p>{{ recipe.strMeal }}</p>
-		<img src="http://{{ recipe.strMealThumb }}">
-	</a>
+<div *ngFor="let recipe of recipes" class="container">
+	<ul>
+		<li>
+			<a [routerLink]="['/details', recipe.idMeal]">
+				<img src="http://{{ recipe.strMealThumb }}">
+				<figcaption>{{ recipe.strMeal }}</figcaption>
+
+			</a>
+		</li>
+	</ul>
 </div>
 
