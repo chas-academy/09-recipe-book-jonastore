@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { RecipeService } from '../recipe.service';
+import { RouterModule, Routes } from '@angular/router';
 
 @Component({
   selector: 'app-recipe-list',
@@ -14,7 +15,11 @@ export class RecipeListComponent implements OnInit {
 
   searchRecipes(query){
   	return this._recipeService.getRecipe(query).subscribe(
-  		data => this.searchComplete(data)
+  		data => this.searchComplete(data))
+  }
+
+  getDetail(id: number) {
+   //return this.route.snapshot.paramMap.get('id');
   }
 
   searchComplete(data) { 
