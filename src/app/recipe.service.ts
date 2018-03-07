@@ -9,19 +9,16 @@ export class RecipeService {
 
   private query: string;
   private API_URL: string = environment.RECIPE_API_URL; //just put url here?
-  private SEARCH_URL: string = this.API_URL + '?c=';
+ // private SEARCH_URL: string = this.API_URL + '?c=';
 
   constructor(private _http : Http) { }
 
   getRecipe(query) {
-  	return this._http.get(this.SEARCH_URL + query).map(res => res.json());  //change URL to SEARCH_URL or something
+  	return this._http.get(this.API_URL + query).map(res => res.json()); 
   }
-  //starts here
 
   get(idMeal) {
   	return this._http.get("http://www.themealdb.com/api/json/v1/1/lookup.php?i=" + idMeal ).map(res => res.json());
   }
-
-  //ends here
 
 }

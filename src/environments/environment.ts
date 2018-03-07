@@ -5,5 +5,5 @@
 
 export const environment = {
   production: false,
-  RECIPE_API_URL: 'http://www.themealdb.com/api/json/v1/1/filter.php'
+  RECIPE_API_URL: 'http://www.themealdb.com/api/json/v1/1/filter.php?c='
 };
